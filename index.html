@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>Real-Time Character Counter</title>
-  </head>
 
-  <body>
-    <main>
-      <h1>Real-Time Character Counter</h1>
-      <section class="container">
-        <div class="charInput">
-            <div class="inputDetails">
-                <div class="buttons">
-                    <button class="btn" id="Character" type="button">Character</button>
-                    <button class="btn" type="button" id="Word">Word</button>
-                </div>
-                <div class="limitInput">
-                    <input type="number" value="50" name="limitCount" id="limitCount">
-                    <select name="limit" id="limit" value="Character">
-                        <option value="Character" selected>Character</option>
-                        <option value="Word">Word</option>
-                    </select>
-                    <span>limit</span>
-                </div>
-            </div>
-          <textarea placeholder="Please write your text here..." type="text" id="char"></textarea>
-        </div>
-        <div class="details">
-            <p><span id="updateTotal">Total Characters:    </span><b id="countTotal">0</b></p>
-            
-            <p><span id="updateRemaining">Remaining Characters:    </span><b id="countRemaining">50</b></p>
-            <button type="reset" class="reset">Reset</button>
-        </div>
-      </section>
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Real-Time Character Counter</title>
+</head>
 
-    <script src="script.js"></script>
-  </body>
+<body>
+  <main>
+    <h1>Real-Time Character Counter</h1>
+    <section class="container">
+      <div class="charInput">
+        <div class="inputDetails">
+          <div class="buttons">
+            <button class="btn" id="Character" type="button">Character</button>
+            <button class="btn" type="button" id="Word">Word</button>
+          </div>
+          <div class="limitInput">
+            <input type="number" value="50" name="limitCount" id="limitCount">
+            <select name="limit" id="limit" value="Character">
+              <option value="Character" selected>Character</option>
+              <option value="Word">Word</option>
+            </select>
+            <span>limit</span>
+          </div>
+        </div>
+        <textarea placeholder="Please write your text here..." type="text" id="char"></textarea>
+      </div>
+      <div class="details">
+        <p><span id="updateTotal">Total Characters: </span><b id="countTotal">0</b></p>
+
+        <p><span id="updateRemaining">Remaining Characters: </span><b id="countRemaining">50</b></p>
+        <button type="reset" class="reset">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
